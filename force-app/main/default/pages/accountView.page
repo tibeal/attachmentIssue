@@ -1,0 +1,11 @@
+<apex:page tabStyle="Account" sidebar="false" standardController="Account" extensions="AccViewController" docType="html-5.0"
+    lightningStylesheets="true">
+
+    <head>
+        <h1>Acc Detail: {!record['name']}</h1>
+    </head>
+
+    <body>
+        <apex:relatedList list="CombinedAttachments" pageSize="10" />
+    </body>
+</apex:page>
